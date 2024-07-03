@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "ac6c3475-896e-414e-9296-d95d3ed7260d",
+		"name": "NewsAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24256174"
+	},
+	"item": [
+		{
+			"name": "News_Bitcoin_SearchIn_title",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{newsAPI-Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseUrlNewsAPI}}/everything?q=bitcoin&searchIn=title",
+					"host": [
+						"{{BaseUrlNewsAPI}}"
+					],
+					"path": [
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "bitcoin"
+						},
+						{
+							"key": "searchIn",
+							"value": "title"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News_Bitcoin_Language_EN",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{newsAPI-Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseUrlNewsAPI}}/everything?q=bitcoin&language=en",
+					"host": [
+						"{{BaseUrlNewsAPI}}"
+					],
+					"path": [
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "bitcoin"
+						},
+						{
+							"key": "language",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News_Bitcoin_sortBy_Popularity",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{newsAPI-Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseUrlNewsAPI}}/everything?q=bitcoin&sortBy=popularity",
+					"host": [
+						"{{BaseUrlNewsAPI}}"
+					],
+					"path": [
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "bitcoin"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News_Top_Headlines_Country=US",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{newsAPI-Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseUrlNewsAPI}}/top-headlines?country=us",
+					"host": [
+						"{{BaseUrlNewsAPI}}"
+					],
+					"path": [
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News_Top_Headlines_Category=technology",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{newsAPI-Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseUrlNewsAPI}}/top-headlines?category=technology",
+					"host": [
+						"{{BaseUrlNewsAPI}}"
+					],
+					"path": [
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "technology"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

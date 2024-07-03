@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "e19b1fce-58ef-4ff7-af80-5979c536e019",
+		"name": "SWAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24256174"
+	},
+	"item": [
+		{
+			"name": "People_10",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{newsAPI-Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseUrlSWAPI}}/people/10",
+					"host": [
+						"{{BaseUrlSWAPI}}"
+					],
+					"path": [
+						"people",
+						"10"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "bitcoin",
+							"disabled": true
+						},
+						{
+							"key": "searchIn",
+							"value": "title",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Films_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BaseUrlSWAPI}}/films/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicles_13",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BaseUrlSWAPI}}/vehicles/14"
+			},
+			"response": []
+		},
+		{
+			"name": "Planets_15",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BaseUrlSWAPI}}/planets/15"
+			},
+			"response": []
+		},
+		{
+			"name": "Starships_12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BaseUrlSWAPI}}/starships/12"
+			},
+			"response": []
+		}
+	]
+}
